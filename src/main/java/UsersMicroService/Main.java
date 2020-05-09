@@ -4,12 +4,13 @@ import UsersMicroService.classes.fileProcessor;
 import UsersMicroService.handlers.usersServlet;
 import UsersMicroService.utils.Common;
 import UsersMicroService.utils.PropertyManager;
+
+
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHandler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import java.io.FileWriter;
 import java.io.IOException;
 
@@ -39,7 +40,7 @@ public class Main {
         }, "Stop Jetty Hook"));
     }
 
-    private static void runServer() {
+    private static void runServer()  {
         int port = PropertyManager.getPropertyAsInteger("server.port", 7000);
         String contextStr = PropertyManager.getPropertyAsString("server.context", "/");
 

@@ -9,11 +9,11 @@ import java.util.List;
 public class Answer
 {
     private String status;
-    private Client client;
+    private String Details;
 
-    public Answer(String status, Client people) {
+    public Answer(String status, String details) {
         this.status = status;
-        this.client = people;
+        Details = details;
     }
 
     public String getStatus() {
@@ -24,11 +24,11 @@ public class Answer
         this.status = status;
     }
 
-    public Client getClients() {
-        return client;
+    public String getDetails() {
+        return Details;
     }
 
-    public void setClients(Client client) {
-        this.client = client;
+    public void setDetails(String details) {
+        Details = details;
     }
 }
