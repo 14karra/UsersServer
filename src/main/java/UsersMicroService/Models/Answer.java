@@ -1,11 +1,5 @@
 package UsersMicroService.Models;
 
-
-import UsersMicroService.classes.Client;
-
-import java.util.ArrayList;
-import java.util.List;
-
 public class Answer
 {
     private String status;
